@@ -5,7 +5,8 @@
   "description": "Share images to Telegram via context menu",
   "permissions": [
     "contextMenus",
-    "tabs"
+    "tabs",
+    "clipboardRead"
   ],
   "host_permissions": [
     "<all_urls>"

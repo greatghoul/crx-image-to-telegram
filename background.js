@@ -12,8 +12,9 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === 'shareToTelegram') {
     // Open publisher.html in a popup window
     const imageUrl = encodeURIComponent(info.srcUrl);
+    const pageUrl = encodeURIComponent(tab.url);
     chrome.windows.create({
-      url: `publisher.html?imageUrl=${imageUrl}`,
+      url: `publisher.html?imageUrl=${imageUrl}&pageUrl=${pageUrl}`,
       type: 'popup',
       width: 500,
       height: 600
