@@ -1,0 +1,22 @@
+/**
+ * Your Telegram Bot Token from @BotFather
+ * How to get:
+ * 1. Open Telegram and search for @BotFather
+ * 2. Send /newbot command and follow the instructions
+ * 3. Copy the token that looks like '123456789:ABCdefGHIjklMNOpqrsTUVwxyz'
+ * @see https://core.telegram.org/bots#how-do-i-create-a-bot
+ */
+export const botToken = 'YOUR_BOT_TOKEN';
+
+/**
+ * Your Telegram Chat ID
+ * How to get:
+ * 1. Send a message to @userinfobot in Telegram
+ * 2. It will reply with your chat ID (usually starts with '-' for groups)
+ * Or:
+ * 1. Send a message to your bot
+ * 2. Access https://api.telegram.org/bot<YourBOTToken>/getUpdates
+ * 3. Look for the "chat": {"id": NUMBER} field
+ * @see https://stackoverflow.com/questions/32423837/telegram-bot-how-to-get-a-group-chat-id
+ */
+export const chatId = 'YOUR_CHAT_ID';

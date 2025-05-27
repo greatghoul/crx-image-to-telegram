@@ -1,0 +1,7 @@
+# Ignore settings file with sensitive information
+settings.js
+
+# Optional: Common files to ignore
+node_modules/
+.DS_Store
+*.log
