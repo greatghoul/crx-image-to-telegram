@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Share Image to Telegram",
+  "version": "1.0",
+  "description": "Share images to Telegram via context menu",
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
