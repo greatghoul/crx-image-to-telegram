@@ -68,6 +68,12 @@ async function init () {
   const clipboardText = await readClipboardText();
   captionInput.value = clipboardText || pageUrl;
   captionInput.focus();
+
+  try {
+    await navigator.clipboard.writeText('');
+  } catch (err) {
+    console.error('Failed to clear clipboard: ', err);
+  }
 }
 
 init();
